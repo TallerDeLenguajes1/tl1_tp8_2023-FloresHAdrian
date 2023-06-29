@@ -17,10 +17,10 @@ public class Tarea{
     }
 
     public void mostrarTarea(){
-        System.Console.WriteLine($"\nTareaId= {TareaId+1} \nDescripcion: {Descripcion}\nDuracion: {Duracion}");
+        System.Console.WriteLine($"\nTareaId= {TareaId} \nDescripcion: {Descripcion}\nDuracion: {Duracion}");
     }
 
     public void mostrarTareas(){
-        
+
     }
 }

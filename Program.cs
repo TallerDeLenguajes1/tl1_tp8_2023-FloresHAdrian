@@ -16,6 +16,7 @@ internal class Program
             Console.WriteLine("  1.Cargar Tarea");
             Console.WriteLine("  2.Mostrar Tareas");
             Console.WriteLine("  3.Modificar estado de tarea");
+            Console.WriteLine("  4.Busqueda de Tareas Pendientes");
             Console.WriteLine("  0.Salir\n\n");
             int.TryParse(Console.ReadLine(), out op);
             // while (!int.TryParse(Console.ReadLine(),out op) || op < 0 || op > 5);
@@ -58,7 +59,7 @@ internal class Program
                         Console.WriteLine("<<<<<<  Control de tareas  >>>>>>");
                         int op3;
                         for (int i = 0 ; i < tareasPendientes.Count; i++ ){
-                            Console.WriteLine("Tarea "+ i);
+                            // Console.WriteLine("Tarea "+ i);
                             tareasPendientes[i].mostrarTarea();
                             Console.WriteLine("Esta la tarea realizada: [1]Si - [0]No");
                             int.TryParse(Console.ReadLine(),out op3);
@@ -73,7 +74,7 @@ internal class Program
                         break;
 
                     case 4:
-                        System.Console.WriteLine("<<<<<< Busqueda de Tareas  >>>>>>");
+                        System.Console.WriteLine("<<<<<< Busqueda de Tareas Pendientes  >>>>>>");
                         string? busqueda = Console.ReadLine();
                         int flag=0;
                         foreach (var item in tareasPendientes)
